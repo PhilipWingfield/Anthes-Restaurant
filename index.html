@@ -1110,6 +1110,7 @@ body.lightbox-open{overflow:hidden}
   var sourceClasses = ['food-grid', 'extras-grid', 'cocktails-grid', 'space-grid'];
   var FOOD_MAIN_DESKTOP_COUNT = 11;
   var FOOD_MAIN_MOBILE_COUNT = 8;
+  var mobileModeActive = false;
 
   function getType(track){
     if (track.classList.contains('space-grid')) return 'space';
@@ -1131,6 +1132,9 @@ body.lightbox-open{overflow:hidden}
     ).concat(
       Array.prototype.slice.call(foodExtra.querySelectorAll(':scope > .gallery-item'))
     );
+    all = all.filter(function(item){
+      return !item.classList.contains('mc-clone');
+    });
     if (!all.length) return;
 
     foodMain.innerHTML = '';
@@ -1326,11 +1330,16 @@ body.lightbox-open{overflow:hidden}
 
   function handleModeChange(){
     if (mobileQuery.matches){
+      if (mobileModeActive) return;
+      destroyAll();
       redistributeFood(FOOD_MAIN_MOBILE_COUNT); // mobile-only 8/7 split
       initAll();
+      mobileModeActive = true;
     } else {
+      if (!mobileModeActive && !instances.length) return;
       destroyAll();
       redistributeFood(FOOD_MAIN_DESKTOP_COUNT); // restore desktop/tablet 11/4 layout
+      mobileModeActive = false;
     }
   }
 
