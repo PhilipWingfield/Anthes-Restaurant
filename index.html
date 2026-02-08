@@ -416,115 +416,6 @@ nav.scrolled{
 }
 .social-links a:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
 
-
-
-/* ─── CHEF ─── */
-.chef {
-  background: var(--primary);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
-}
-.chef-content {
-  padding: 8rem 5rem 8rem 8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-}
-.chef-content .section-label {
-  margin-bottom: 2rem;
-}
-.chef-eyebrow {
-  font-size: .67rem;
-  letter-spacing: .28em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 400;
-  margin-bottom: 1.6rem;
-  display: flex;
-  align-items: center;
-  gap: .85rem;
-}
-.chef-eyebrow::before {
-  content: '';
-  width: 22px;
-  height: 1px;
-  background: var(--accent);
-}
-.chef-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 4rem;
-  font-weight: 300;
-  color: var(--text-light);
-  line-height: 1.1;
-  margin-bottom: .8rem;
-  letter-spacing: -.01em;
-}
-.chef-role {
-  font-size: .75rem;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: rgba(245,242,237,.35);
-  font-weight: 300;
-  margin-bottom: 2.8rem;
-  padding-bottom: 2.8rem;
-  border-bottom: 1px solid rgba(201,169,97,.15);
-}
-.chef-bio {
-  font-size: .93rem;
-  line-height: 2;
-  font-weight: 300;
-  color: rgba(245,242,237,.58);
-  margin-bottom: 1.6rem;
-  max-width: 440px;
-}
-.chef-bio:last-of-type {
-  margin-bottom: 0;
-}
-.chef-quote {
-  margin-top: 2.8rem;
-  padding-top: 2.4rem;
-  border-top: 1px solid rgba(201,169,97,.15);
-}
-.chef-quote-text {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 300;
-  color: var(--accent);
-  line-height: 1.6;
-  letter-spacing: .01em;
-  opacity: .85;
-}
-.chef-quote-attr {
-  font-size: .7rem;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  color: rgba(245,242,237,.3);
-  font-weight: 300;
-  margin-top: 1rem;
-}
-.chef-image {
-  position: relative;
-  overflow: hidden;
-}
-.chef-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
-.chef-image::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(17,17,16,.15) 0%, rgba(17,17,16,.0) 30%, rgba(17,17,16,.25) 100%);
-  z-index: 1;
-  pointer-events: none;
-}
-
 /* ─── FOOTER ─── */
 footer{
   background:var(--primary);padding:2rem 4rem;
@@ -582,11 +473,8 @@ footer{
   .hero-title{font-size:4.6rem}
 
   /* layout sections stack */
-  .about,.experience,.chef{grid-template-columns:1fr}
+  .about,.experience{grid-template-columns:1fr}
   .about{min-height:auto}
-  .chef{min-height:auto}
-  .chef-content{padding:5rem 3rem 4rem;order:2}
-  .chef-image{min-height:55vh;order:1}
   .about-image,.experience-image{min-height:30vh}
 
   /* space */
@@ -646,9 +534,7 @@ footer{
 
   /* text sections */
   .about-text,.experience-content{padding:1.5rem 1.2rem;margin-left:0}
-  .chef-content{padding:3.5rem 2rem}
   .about-title,.experience-title{font-size:2.2rem}
-  .chef-name{font-size:2.8rem}
 
   /* contact */
   .contact-title{font-size:2.5rem}
@@ -716,12 +602,6 @@ footer{
   }
   .space-grid .space-item--feature{grid-column:1;aspect-ratio:auto}
   .space-grid .gallery-item:nth-child(n){grid-column:1 !important;grid-row:auto !important}
-
-  /* chef */
-  .chef-name{font-size:2.2rem}
-  .chef-content{padding:2.5rem 1.2rem}
-  .chef-bio{font-size:.85rem}
-  .chef-quote-text{font-size:1.2rem}
 
   /* about / experience */
   .about-text,.experience-content{padding:1.1rem .9rem}
