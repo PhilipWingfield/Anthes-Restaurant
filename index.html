@@ -792,6 +792,13 @@ body.lightbox-open{overflow:hidden}
 .gallery-cta{text-align:center;margin-top:2.6rem}
 .hero-actions{flex-wrap:wrap}
 .hero-actions .pill-btn{white-space:nowrap}
+/* desktop widths just above the hamburger breakpoint: keep the nav on one line */
+@media(min-width:1025px) and (max-width:1240px){
+  nav,nav.scrolled{padding-left:2.5rem;padding-right:2.5rem}
+  .nav-links{gap:1.15rem}
+  .nav-links a{letter-spacing:.11em}
+  .nav-links .pill-btn{padding:.6rem 1.3rem}
+}
 </style>
 </head>
 <body>
