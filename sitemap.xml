@@ -15,4 +15,18 @@
     <xhtml:link rel="alternate" hreflang="el" href="https://anthesrestaurant.com/el/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://anthesrestaurant.com/"/>
   </url>
+  <url>
+    <loc>https://anthesrestaurant.com/menu/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anthesrestaurant.com/menu/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://anthesrestaurant.com/el/menu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anthesrestaurant.com/menu/"/>
+  </url>
+  <url>
+    <loc>https://anthesrestaurant.com/el/menu/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anthesrestaurant.com/menu/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://anthesrestaurant.com/el/menu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anthesrestaurant.com/menu/"/>
+  </url>
 </urlset>
